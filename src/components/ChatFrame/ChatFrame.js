@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class ChatFrame extends Component {
   render() {
-    return <div>Frame</div>;
+    return <div>Frame !!</div>;
   }
 }
 
