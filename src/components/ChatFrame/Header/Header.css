@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+.linus-chat .frame header {
+  background-color: #be3430;
+  height: 38px;
+  font-family: "Noto Sans", sans-serif;
+  color: #ffffff;
+  border-radius: 6px 6px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); }
+  .linus-chat .frame header title {
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    padding-left: 5px; }
+  .linus-chat .frame header .actions {
+    display: inline-block;
+    float: right;
+    height: 38px;
+    width: 40px; }
+    .linus-chat .frame header .actions .action {
+      height: 100%;
+      margin: 0 3px 0 0;
+      cursor: pointer; }
+      .linus-chat .frame header .actions .action.close img {
+        width: 16px;
+        margin: 10px; }

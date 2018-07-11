@@ -1,0 +1,52 @@
+@import 'theme/fonts.scss';
+
+$font-family: 'Noto Sans', sans-serif;
+$chat-height:400px;
+$chat-width:270px;
+
+
+$primary-bg: #be3430;
+$primary-action-bg: #31C7BC;
+$sent-bg: #ffffff;
+$received-bg: #EFDFE0;
+$box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5);
+$primary-font-color: #ffffff;
+
+$border-color: #31C7BC;
+
+// === Minimized === //
+$minimized-color: $primary-bg;
+
+
+// === Frame-Header === //
+$header-bg: $primary-bg;
+$header-height: 38px;
+$header-font-family: $font-family;
+$header-font-color: $primary-font-color;
+$header-border-radius: 6px 6px 0px 0px;
+$header-box-shadow: $box-shadow;
+// title
+$header-title-line-height: 35px;
+$header-title-padding-left: 5px;
+
+
+//$footer-height must be defined here to calc $mlist-height
+$footer-height: 30px;
+
+// === Frame-MessageList === //
+$mlist-font-family:$font-family;
+$mlist-font-size: 80%;
+$mlist-bg: #fff;
+$mlist-box-shadow: $box-shadow;
+$mlist-padding-vertical: 8px;
+$mlist-padding-horizontal: 3px;
+$mlist-padding: $mlist-padding-vertical $mlist-padding-horizontal;
+$mlist-height: $chat-height - $header-height - $footer-height - ($mlist-padding-vertical*2);
+
+$mlist-scroll-width: 6px;
+$mlist-scroll-track-bg: transparent;
+$mlist-scroll-thumb-bg: rgba(0, 0, 0, 0.3);
+$mlist-scroll-thumb-border-radius: 3px;
+
+// === Frame-Footer === //
+//$footer-height: <must be defined before $mlist-height>;

@@ -1,0 +1,36 @@
+@import 'theme/variables.scss';
+
+.linus-chat .frame .message-list-wrapper{
+
+  background-color: $mlist-bg;
+  box-shadow: $mlist-box-shadow;
+  z-index:1;
+  padding:$mlist-padding;
+  height:$mlist-height;
+
+  overflow: hidden;
+
+  .message-list{
+    height:$mlist-height;
+    font-family: $mlist-font-family;
+    font-size: $mlist-font-size;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    // Webkit
+    &::-webkit-scrollbar {
+      display: block;
+      width: $mlist-scroll-width;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $mlist-scroll-track-bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $mlist-scroll-thumb-bg;
+      border-radius: $mlist-scroll-thumb-border-radius;
+    }
+
+  }
+}

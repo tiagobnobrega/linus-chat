@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LinusChat.css';
 import ChatFrame from './components/ChatFrame/ChatFrame';
 import ChatMinimized from './components/ChatMinimized/ChatMinimized';
 
@@ -11,6 +12,7 @@ class LinusChat extends Component {
 
   renderMinimized() {
     const { renderMinimized } = this.props;
+    console.log('LinusChat.props=',this.props);
     if (renderMinimized) return renderMinimized(this.props);
     return <ChatMinimized {...this.props} />;
   }

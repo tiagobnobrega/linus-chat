@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+.linus-chat .frame .message-list-wrapper {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: 8px 3px;
+  height: 316px;
+  overflow: hidden; }
+  .linus-chat .frame .message-list-wrapper .message-list {
+    height: 316px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    .linus-chat .frame .message-list-wrapper .message-list::-webkit-scrollbar {
+      display: block;
+      width: 6px; }
+    .linus-chat .frame .message-list-wrapper .message-list::-webkit-scrollbar-track {
+      background: transparent; }
+    .linus-chat .frame .message-list-wrapper .message-list::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 3px; }
