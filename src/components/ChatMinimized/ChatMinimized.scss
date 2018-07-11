@@ -2,18 +2,23 @@
 
 .linus-chat{
   .minimized{
+    box-sizing: border-box;
     position:absolute;
-    border-radius:6px;
-    background-color: $minimized-color;
-    padding:9px 13px 4px 12px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    width: $minimized-width;
+    height: $minimized-height;
+    border-radius:$minimized-border-radius;
+    background-color: $minimized-color;
+    padding:$minimized-padding;
+    box-shadow: $minimized-box-shadow;
+    color:$header-font-color;
+    transition: $minimized-transition;
     &:hover{
-      padding:10px 14px 5px 13px;
+      padding:$minimized-padding-hover;
     }
-    .logo{
-      width: 22px;
-      height:20px;
+    svg{
+      width: 100%;
+      height:100%;
     }
   }
 }

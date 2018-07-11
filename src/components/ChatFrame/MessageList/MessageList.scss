@@ -1,16 +1,17 @@
 @import 'theme/variables.scss';
 
 .linus-chat .frame .message-list-wrapper{
-
+  box-sizing: border-box;
   background-color: $mlist-bg;
   box-shadow: $mlist-box-shadow;
-  z-index:1;
   padding:$mlist-padding;
   height:$mlist-height;
 
   overflow: hidden;
 
   .message-list{
+    box-sizing: border-box;
+    padding:$mlist-inner-padding;
     height:$mlist-height;
     font-family: $mlist-font-family;
     font-size: $mlist-font-size;

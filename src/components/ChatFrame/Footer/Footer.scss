@@ -1,0 +1,66 @@
+@import 'theme/variables.scss';
+
+.linus-chat .frame footer{
+  box-sizing: border-box;
+  width:100%;
+  height: $footer-height;
+  box-shadow: $footer-box-shadow;
+  border-radius: $footer-border-radius;
+  border-top: $footer-border-top;
+  background-color: $footer-bg;
+  textarea{
+    box-sizing: border-box;
+    display:inline-block;
+    resize: none;
+    border-style:none;
+    outline: none;
+    margin: 0;
+    height:100%;
+    width: $footer-input-width;
+    padding: $footer-input-padding;
+    border-radius: $footer-input-border-radius;
+    background-color: $footer-input-bg;
+
+    // Webkit
+    &::-webkit-scrollbar {
+      display: block;
+      width: $mlist-scroll-width;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $mlist-scroll-track-bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $mlist-scroll-thumb-bg;
+      border-radius: $mlist-scroll-thumb-border-radius;
+    }
+  }
+  .actions{
+    box-sizing: border-box;
+    display:inline-block;
+    width: $footer-actions-width;
+    padding: $footer-actions-padding;
+    height:100%;
+    background-color: $footer-actions-bg;
+    border-radius: $footer-actions-border-radius;
+    float:right;
+    transition: $footer-actions-transition;
+    &:hover{
+      background-color: $primary-font-color;
+    }
+    .icon{
+      box-sizing: border-box;
+      height:100%;
+      cursor:pointer;
+      padding:$footer-actions-icon-padding;
+      color:$footer-actions-font-color;
+      svg *{
+        transition: $footer-actions-transition;
+      }
+      &:hover{
+        color: $primary-font-inverse;
+      }
+    }
+  }
+}

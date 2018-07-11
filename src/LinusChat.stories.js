@@ -10,7 +10,7 @@ const buildMessages = (amount = 1) => {
   const ret = [];
   for (let i = 0; i < amount; i += 1) {
     ret.push({ type: 'text', direction: 'out', payload: `message [${i}]: Some message` });
-  };
+  }
   return ret;
 };
 
@@ -21,11 +21,26 @@ storiesOf('LinusChat', module)
     <LinusChat isOpen={true} onMinimize={action('onMinimize-action')} messages={buildMessages(5)} />
   ))
   .add('Open - 20 Messages', () => (
-    <LinusChat isOpen={true} onMinimize={action('onMinimize-action')} messages={buildMessages(20)} />
+    <LinusChat
+      isOpen={true}
+      onSendMessage={action('onSendMessage-action')}
+      onMinimize={action('onMinimize-action')}
+      messages={buildMessages(20)}
+    />
   ))
   .add('Open - 100 Messages', () => (
-    <LinusChat isOpen={true} onMinimize={action('onMinimize-action')} messages={buildMessages(100)} />
+    <LinusChat
+      isOpen={true}
+      onSendMessage={action('onSendMessage-action')}
+      onMinimize={action('onMinimize-action')}
+      messages={buildMessages(100)}
+    />
   ))
   .add('Open - 1000 Messages', () => (
-    <LinusChat isOpen={true} onMinimize={action('onMinimize-action')} messages={buildMessages(1000)} />
+    <LinusChat
+      isOpen={true}
+      onSendMessage={action('onSendMessage-action')}
+      onMinimize={action('onMinimize-action')}
+      messages={buildMessages(1000)}
+    />
   ));

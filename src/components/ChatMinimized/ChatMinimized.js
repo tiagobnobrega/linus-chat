@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import minimized from './minimized.svg';
+import Icons from '../LinusIcons';
 
 import './ChatMinimized.css';
 
@@ -8,7 +8,7 @@ class ChatMinimized extends Component {
     console.log('props:', this.props);
     return (
       <div className="minimized" onClick={this.props.onMaximize}>
-        <img src={minimized} className="logo" alt="logo" />
+        <Icons.Minimized />
       </div>
     );
   }

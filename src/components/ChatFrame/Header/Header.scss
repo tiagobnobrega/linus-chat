@@ -8,6 +8,9 @@
   color: $header-font-color;
   border-radius: $header-border-radius;
   box-shadow: $header-box-shadow;
+
+  @include no-select();
+
   title{
     display: inline-block;
     height:100%;

@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
 .linus-chat .frame .message-list-wrapper {
-  background-color: #fff;
+  box-sizing: border-box;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  padding: 8px 3px;
-  height: 316px;
+  padding: 0 3px;
+  height: 327px;
   overflow: hidden; }
   .linus-chat .frame .message-list-wrapper .message-list {
-    height: 316px;
+    box-sizing: border-box;
+    padding: 0 0 5px 0;
+    height: 327px;
     font-family: "Noto Sans", sans-serif;
     font-size: 80%;
     overflow-y: scroll;
